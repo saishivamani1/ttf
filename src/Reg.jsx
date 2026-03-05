@@ -14,7 +14,7 @@ function Reg() {
 
     const submit = async () => {
         try {
-            const res = await axios.post("https://ttb-1.onrender.com/reg", data);
+            const res = await axios.post("https://ttb-1.onrender.com/register", data);
             alert(res.data);
         } catch (xyz) {
             alert(xyz.response?.data || "Error");
